@@ -1,3 +1,7 @@
+<h1>
+// Project 2- An app that holds a collection of delicious homecooked resipes //
+</h1>
+
 <h2>// Pseudocode //
 </h2>
 <p>
@@ -111,3 +115,9 @@ As a user I want to be able to see an error and explanation of what went wrong
 <p>
 As a user I want to be able to enjoy a great welcome page
 </p>
+
+<h4>
+// Wireframe //
+</h4>
+
+![wireframe](project-2-wireframe.jpg)
