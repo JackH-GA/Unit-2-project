@@ -121,3 +121,9 @@ As a user I want to be able to enjoy a great welcome page
 </h4>
 
 ![wireframe](project-2-wireframe.jpg)
+
+<h5>
+ERD
+</h5>
+
+![ERD](ERD-project-2.jpg)
