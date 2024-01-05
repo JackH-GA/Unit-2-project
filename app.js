@@ -1,14 +1,17 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var methodOverride = require('method-override');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const methodOverride = require('method-override');
 
-var indexRouter = require('./routes/index');
-var recipesRouter = require('./routes/recipes');
+require('dotenv').config();
+require('./config/database');
 
-var app = express();
+const indexRouter = require('./routes/index');
+const recipesRouter = require('./routes/recipes');
+
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -18,7 +21,6 @@ app.set('view engine', 'ejs');
 // app.use([starts with path], <middleware fn> [, <middleware fn>])
 
 app.use(function(req, res, next) {
-  console.log('Hello SEI!');
   // Add a time property to the res.locals object
   // The time property will then be accessible within templates
   res.locals.time = new Date().toLocaleTimeString();

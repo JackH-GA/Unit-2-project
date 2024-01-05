@@ -3,12 +3,6 @@ const router = express.Router();
 const recipesCtrl = require('../controllers/recipes');
 const recipes = require('../controllers/recipes');
 
-
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
-
 // All actual paths start with "/recipes"
 
 // GET /recipes

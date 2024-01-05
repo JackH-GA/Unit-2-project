@@ -1,7 +1,15 @@
 <%- include('../partials/header') %>
 
 <form action="/recipes" method="POST">
-    <input type="text" name="recipe">
+   <label>Title:
+    <input type="text" name="title">
+   </label><br>
+   <label>Ingredients (separate with commas):
+    <input type="text" name="ingredients">
+   </label><br>
+   <label>Steps (separate with commas and begin each step with a number):
+    <input type="text" name="steps">
+   </label><br>
     <button type="submit">Save Recipe</button>
 </form>
 
