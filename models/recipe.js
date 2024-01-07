@@ -20,8 +20,6 @@ module.exports = mongoose.model('Recipe', recipeSchema);
 // ];
 
 // module.exports = {
-//     getAll,
-//     getOne,
 //     create,
 //     deleteOne
 //   };

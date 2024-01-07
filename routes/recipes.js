@@ -10,7 +10,7 @@ router.get('/', recipesCtrl.index);
 // GET/recipes/new <-- Define BEFORE show route
 router.get('/new', recipesCtrl.new);
 // GET /recipes/:id
-router.get('/:id', recipesCtrl.show);
+// router.get('/:id', recipesCtrl.show);
 // POST /recipes
 router.post('/', recipesCtrl.create);
 // DELETE /recipes/:id

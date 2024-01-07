@@ -33,6 +33,9 @@ function show(req, res) {
 }
 
 async function index(req, res) {
+    if (req.body.ingredients) { req.body.ingredients = req.body.ingredients.split(/\s*,\s*/)}
+    if (req.body.steps) { req.body.steps = req.body.steps.split(/\s*,\s*/)}
+
     try {
         const allRecipes = await Recipe.find({})
     
