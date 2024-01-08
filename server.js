@@ -14,6 +14,7 @@ require('./config/passport');
 
 const indexRouter = require('./routes/index');
 const recipesRouter = require('./routes/recipes');
+const reviewsRouter = require('./routes/reviews');
 
 const app = express();
 
@@ -23,13 +24,6 @@ app.set('view engine', 'ejs');
 
 // Mount middleware into the middleware/request pipeline
 // app.use([starts with path], <middleware fn> [, <middleware fn>])
-
-app.use(function(req, res, next) {
-  // Add a time property to the res.locals object
-  // The time property will then be accessible within templates
-  res.locals.time = new Date().toLocaleTimeString();
-  next();
-});
 
 // Log in the terminal the HTTP request info
 app.use(logger('dev'));
@@ -66,6 +60,7 @@ app.use(function (req, res, next) {
 // to the starts with paths 
 app.use('/', indexRouter);
 app.use('/recipes', recipesRouter);
+app.use('/', reviewsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

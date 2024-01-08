@@ -1,11 +1,10 @@
 <%- include('../partials/header') %>
 
-<h3>Recipes</h3>
+<title>Recipes</title>
 
 <table>
     <thead>
       <tr>
-        <th>Remove</th>
         <th>Title</th>
         <th>Ingredients</th>
         <th>Steps</th>
@@ -17,20 +16,11 @@
         <% recipes.forEach(function(r) { %>
             <li>
                 <tr>
-                    <td>
-                        <form 
-                            action="/recipes/<%= r.id %>?_method=DELETE" 
-                            method="POST"
-                            class="delete-form"
-                            >
-                            <button type=""submit>X</button>
-                        </form>
-                    </td>
                     <td><%= r.title %></td>
                     <td><%= r.ingredients.join(', ') %></td>
                     <td><%= r.steps.join(', ') %></td>
-                    <td><a href="/recipes/show">View Recipe</a></td>
-                  </tr>
+                    <td><a href="/recipes/recipe/show">View Recipe</a></td>
+                </tr>
             </li>
         <% }); %>
         </ul>
