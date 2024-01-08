@@ -8,11 +8,11 @@ const ensureLoggedIn = require('../config/ensureLoggedIn');
 // GET /recipes
 router.get('/', recipesCtrl.index);
 // GET/recipes/new <-- Define BEFORE show route
-router.get('/new', recipesCtrl.new);
+router.get('/new', ensureLoggedIn, recipesCtrl.new);
 // GET /recipes/:id
 router.get('/:id', recipesCtrl.show);
 // POST /recipes
-router.post('/', recipesCtrl.create);
+router.post('/', ensureLoggedIn, recipesCtrl.create);
 // DELETE /recipes/:id
 // router.delete('/:id', recipesCtrl.delete)
 
