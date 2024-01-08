@@ -12,18 +12,14 @@
       </tr>
     </thead>
     <tbody>
-        <ul>
-        <% recipes.forEach(function(r) { %>
-            <li>
-                <tr>
-                    <td><%= r.title %></td>
-                    <td><%= r.ingredients.join(', ') %></td>
-                    <td><%= r.steps.join(', ') %></td>
-                    <td><a href="/recipes/show">Reviews</a></td>
-                </tr>
-            </li>
+        <% recipes.forEach(function(r) { %> 
+            <tr>
+                <td><%= r.title %></td>
+                <td><%= r.ingredients.join(', ') %></td>
+                <td><%= r.steps.join(', ') %></td>
+                <td><a href="/recipes/show">Reviews</a></td>
+            </tr>
         <% }); %>
-        </ul>
     </tbody>
 </table>
 <a href="/recipes/new">Add Recipe</a>

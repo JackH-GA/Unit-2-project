@@ -1,16 +1,18 @@
 <%- include('../partials/header') %>
 
+<h1>Add A New Recipe</h1>
+
 <form action="/recipes" method="POST">
-   <label>Title:
-    <input type="text" name="title">
+   <label class="add header">Recipe Name:
+    <input class="addtitle" type="text" name="title">
    </label><br>
-   <label>Ingredients (separate with commas):
-    <input type="text" name="ingredients">
+   <label class="add header">Ingredients (separate with commas):
+    <input class="addcontent" type="text" name="ingredients">
    </label><br>
-   <label>Steps (separate with commas and begin each step with a number):
-    <input type="text" name="steps">
+   <label class="add header">Steps (separate with commas and begin each step with a number):
+    <input class="addcontent" type="text" name="steps">
    </label><br>
-    <button type="submit">Save Recipe</button>
+    <button class='save' type="submit">Save Recipe</button>
 </form>
 
 <%- include('../partials/footer') %>
