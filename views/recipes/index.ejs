@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-<title>Recipes</title>
+<h1>All Recipes</h1>
 
 <table>
     <thead>
@@ -8,7 +8,7 @@
         <th>Title</th>
         <th>Ingredients</th>
         <th>Steps</th>
-        <th>Details</th>
+        <th>Leave A Review</th>
       </tr>
     </thead>
     <tbody>
@@ -19,7 +19,7 @@
                     <td><%= r.title %></td>
                     <td><%= r.ingredients.join(', ') %></td>
                     <td><%= r.steps.join(', ') %></td>
-                    <td><a href="/recipes/recipe/show">View Recipe</a></td>
+                    <td><a href="/recipes/show">Reviews</a></td>
                 </tr>
             </li>
         <% }); %>

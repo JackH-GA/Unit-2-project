@@ -27,8 +27,8 @@ async function newRecipe(req, res) {
 }
 
 async function show(req, res) {
-    const recipeId = req.params.id
-    console.log('recieved id:', req.params.id)
+    const recipeId = '659b25f98f16fa92dfc1618a';
+    console.log('recieved id:', req.params.id);
     if (!mongoose.Types.ObjectId.isValid(recipeId)) {
         return res.status(400).send('Invalid Id Format');
     }
@@ -37,8 +37,8 @@ async function show(req, res) {
         const recipe = await Recipe.findById(recipeId);
         if (!recipe) {
             return res.status(404).send('Recipe not found');
-        }
-        res.render('recipes/:id', {recipe});
+        };
+        res.render('recipes/show', {recipe});
         } catch (err) {
         console.error(err);
 
