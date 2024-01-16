@@ -134,15 +134,14 @@ As a user I want to be able to enjoy a great welcome page
 </h4>
 
 ![homepage](<Screenshot 2024-01-16 054409.png>)
-![Alt text](<Screenshot 2024-01-16 054352.png>)
+![AllRecipes](<Screenshot 2024-01-16 054352-1.png>)
+![Reviews](<Screenshot 2024-01-16 054334.png>)
 
 <h4>
 // Wireframe //
 </h4>
 
 ![wireframe](project-2-wireframe.jpg)
-![AllRecipes](<Screenshot 2024-01-16 054352-1.png>)
-![Reviews](<Screenshot 2024-01-16 054334.png>)
 
 <h5>
 ERD
