@@ -1,6 +1,20 @@
 <h1>
-// Project 2- An app that holds a collection of delicious homecooked resipes //
+// Jack's Classic Recipes- An app that holds a collection of delicious homecooked recipes that allows you to submit your own favorites and to leave a review of others//
 </h1>
+
+<h2>
+// Technologies used: //
+</h2>
+<p>
+Javascript, Express, HTML, CSS, Mongoose Atlas DB
+</p>
+
+<h2>
+// Getting Started //
+</h2>
+<p>
+login or signup, then browse the collection of recipes, and leave a review of one you try out at home. If you have a favorite recipe you want to share, add a recipe by clicking on the nav bar and finding the add recipe page, from there you can fill out the required fields and click add recipe. Your recipe will appear in the list of all recipes.
+</p>
 
 <h2>// Pseudocode //
 </h2>
@@ -115,12 +129,20 @@ As a user I want to be able to see an error and explanation of what went wrong
 <p>
 As a user I want to be able to enjoy a great welcome page
 </p>
+<h4>
+// Screenshots of App //
+</h4>
+
+![homepage](<Screenshot 2024-01-16 054409.png>)
+![Alt text](<Screenshot 2024-01-16 054352.png>)
 
 <h4>
 // Wireframe //
 </h4>
 
 ![wireframe](project-2-wireframe.jpg)
+![AllRecipes](<Screenshot 2024-01-16 054352-1.png>)
+![Reviews](<Screenshot 2024-01-16 054334.png>)
 
 <h5>
 ERD

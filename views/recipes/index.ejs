@@ -9,6 +9,7 @@
         <th>Ingredients</th>
         <th>Steps</th>
         <th>Leave A Review</th>
+        <th>Update Recipe</th>
       </tr>
     </thead>
     <tbody>
@@ -18,7 +19,8 @@
                 <td><%= r.ingredients.join(', ') %></td>
                 <td><%= r.steps.join(', ') %></td>
                 <td><a href="/recipes/show">Reviews</a></td>
-            </tr>
+                <td><a href="/recipes/update">Update Recipe</a></td>
+              </tr>
         <% }); %>
     </tbody>
 </table>

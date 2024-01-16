@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+<body>  
+    <h1>Update A Recipe</h1>
+    <form action="/recipes/<%= recipe._id %>/update" method="PUT">
+        <div>
+            <label class="add header">Recipe Name:</label>
+            <input class="addtitle" type="text" value='<%= recipe.title %>' name="title" required>
+            
+        </div>
+
+        <div>
+            <label class="add header">Ingredients (separate with commas):</label>
+            <input class="addcontent" type="text" value='<%= recipe.ingredients %>' name="ingredients" required>
+            
+        </div>
+
+        <div>
+            <label class="add header">Steps (separate with commas and begin each step with a number):</label>
+            <input class="addcontent" type="text" value='<%= recipe.steps %>' name="steps" required>
+            
+        </div>
+
+        <button class='save' type="submit">Update Recipe</button>
+    </form>
+</body>
+    
+    <%- include('../partials/footer') %>
